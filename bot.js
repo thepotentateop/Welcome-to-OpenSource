@@ -142,5 +142,5 @@ client.on("guildMemberRemove", (member) => {
   if (newUsers[guild.id].has(member.id)) newUsers.delete(member.id);
 });
 
-
+// Here you have to give your token id in env 
 client.login(config.token);
