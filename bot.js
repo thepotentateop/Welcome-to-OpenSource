@@ -53,7 +53,7 @@ client.on("message", async message => {
   
   if(command === "kick") {
     
-    if(!message.member.roles.some(r=>["Adminstrator", "Moderator"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Adminstrator", "Moderator", "Manager"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this!");
     
     
